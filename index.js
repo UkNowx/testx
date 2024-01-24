@@ -12,7 +12,7 @@ const largeImages = [
     'https://media.discordapp.net/attachments/1198466129664950374/1199704361564110908/powerbackx.gif?ex=65c382c1&is=65b10dc1&hm=33df403c047cdfe49a1031b9ffa1657599b5fbd9a5d2e22876579ad69f6f9b18&=',
     'https://media.discordapp.net/attachments/1198466129664950374/1199704362050654258/genshin.gif?ex=65c382c1&is=65b10dc1&hm=da4389ad33e2ef98ac4e5b4c644f254fd298e9134984ec9486f27c4adea9d7c7&=',
     'https://media.discordapp.net/attachments/1198466129664950374/1199704362482663424/genshin2.gif?ex=65c382c1&is=65b10dc1&hm=f62b7171cb15e3001926e70c009b652e12203dd734c4dd1d3479753f3af01e53&=',
-    'https://media.discordapp.net/attachments/1198466129664950374/1199704363023732736/genshin3.gif?ex=65c382c1&is=65b10dc1&hm=720df3fc9bb421a283a102eb46ae3affe467d93499b786312c41cb982e0378b0&=',
+    'https://media.discordapp.net/attachments/1198466129664950374/1199704363023732736/genshin3.gif?ex=65c382c1&is=65b10dc1&hm=720df3fc9bb421a283a102eb46ae3affe467d93499b786312c41cb982e0378b0&='
     // Add more large image URLs as needed
 ];
 
@@ -29,7 +29,7 @@ const nameTexts = [
     'รับรันเม็ดม่วง 24ชม.',
     'รับรันบอท 24ชม.',
     'รับรันดักซอง 24ชม.',
-    'เเจกของต่างๆเข้ามาดิส',
+    'เเจกของต่างๆเข้ามาดิส'
     // Add more state texts as needed
 ];
 
@@ -67,9 +67,9 @@ client.on("ready", async () => {
 
         client.user.setActivity(r);
 
-      currentLargeImageIndex = (currentLargeImageIndex + 1) % largeImages.length;
-      currentStateIndex = (currentStateIndex + 1) % stateTexts.length;
-      currentNameIndex = (currentnameTextsIndex + 1) % nameTexts.length;
+        currentLargeImageIndex = (currentLargeImageIndex + 1) % largeImages.length;
+        currentStateIndex = (currentStateIndex + 1) % stateTexts.length;
+        currentnameTextsIndex = (currentnameTextsIndex + 1) % nameTexts.length;
     }, 500); // Change large image and state text every 1 second
 });
 
