@@ -8,11 +8,10 @@ const app = express();
 const port = 8000;
 
 const largeImages = [
-    'https://media.discordapp.net/attachments/1198466129664950374/1199704361027244113/powerback.gif?ex=65c382c1&is=65b10dc1&hm=5a48285b814aaf30f3670b496815cd784f781811f9591ebf6e2e4ff30874170f&=',
-    'https://media.discordapp.net/attachments/1198466129664950374/1199704361564110908/powerbackx.gif?ex=65c382c1&is=65b10dc1&hm=33df403c047cdfe49a1031b9ffa1657599b5fbd9a5d2e22876579ad69f6f9b18&=',
-    'https://media.discordapp.net/attachments/1198466129664950374/1199704362050654258/genshin.gif?ex=65c382c1&is=65b10dc1&hm=da4389ad33e2ef98ac4e5b4c644f254fd298e9134984ec9486f27c4adea9d7c7&=',
-    'https://media.discordapp.net/attachments/1198466129664950374/1199704362482663424/genshin2.gif?ex=65c382c1&is=65b10dc1&hm=f62b7171cb15e3001926e70c009b652e12203dd734c4dd1d3479753f3af01e53&=',
-    'https://media.discordapp.net/attachments/1198466129664950374/1199704363023732736/genshin3.gif?ex=65c382c1&is=65b10dc1&hm=720df3fc9bb421a283a102eb46ae3affe467d93499b786312c41cb982e0378b0&='
+    'https://media.discordapp.net/attachments/1213850034056069208/1215175259301486643/ay4.gif?ex=65fbcb26&is=65e95626&hm=fa2c3c2e1fe0c14bc78d3aa497859c9f2ba49cc16e35b4844f3e34fe590f34f6&=',
+    'https://media.discordapp.net/attachments/1213850034056069208/1215175259830095882/ay.gif?ex=65fbcb26&is=65e95626&hm=47b460eed3397559abac621e24a4de9f82fa82f3af0d06ba680d397147f77826&=',
+    'https://media.discordapp.net/attachments/1213850034056069208/1215175260605784085/ay2.gif?ex=65fbcb26&is=65e95626&hm=33c7c01de468ea1822f07906f4af8d4c31ff33954bcfab9836d94dcf3cd52fbb&=',
+    'https://media.discordapp.net/attachments/1213850034056069208/1215175262216392764/ay3.gif?ex=65fbcb27&is=65e95627&hm=4ab7bc64aededc8acb4e628babd0cf374118ee09881d95b1f4c7bbb8e22f5ac8&='
     // Add more large image URLs as needed
 ];
 
@@ -55,6 +54,7 @@ client.on("ready", async () => {
         const r = new Discord.RichPresence()
             .setApplicationId('1121867777867788309')
             .setType('STREAMING')
+            .setURL('https://www.youtube.com/watch?v=RMo3SR1G1yg&list=RDRMo3SR1G1yg&start_radio=1')
             .setState(stateTexts[currentStateIndex])
             .setName(nameTexts[currentnameTextsIndex])
             .setDetails(` ﹝ ⌚${currentTime} | 😎 𝙆𝙞𝙧𝙘𝙮𝘿𝙚𝙫 ﹞ `)
